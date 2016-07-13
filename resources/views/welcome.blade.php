@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Laravel</title>
+        <title>Spot the Docs</title>
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 
@@ -39,6 +39,7 @@
         <div class="container">
             <div class="content">
                 <div class="title">Spot the Docs</div>
+                <p><em>Spot the Docs</em> is a web app that collects GitHub open source projects in need of documentation contributions.</p>
             </div>
         </div>
     </body>
