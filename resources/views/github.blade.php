@@ -6,7 +6,7 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 
         <style>
-        @import url('http://fonts.googleapis.com/css?family=Oldenburg');
+        @import url('https://fonts.googleapis.com/css?family=Oldenburg');
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 margin: 0;
@@ -261,7 +261,7 @@ html[xmlns] .clearfix { display: block; }
       $(function(){
         $('#ghsubmitbtn').on('click', function(e){
           e.preventDefault();
-          $('#ghapidata').html('<div id="loader"><img src="http://i.imgur.com/UqLN6nl.gif" alt="loading..."></div>');
+          $('#ghapidata').html('<div id="loader"><img src="https://i.imgur.com/UqLN6nl.gif" alt="loading..."></div>');
 
           var username = $('#ghusername').val();
           var requri   = 'https://api.github.com/users/'+username;
@@ -320,6 +320,5 @@ html[xmlns] .clearfix { display: block; }
           });
         }
       });
-    });
     </script>
 </html>
