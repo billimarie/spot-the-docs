@@ -1,0 +1,1 @@
+{"virtualbox":{"/home/vagrant/spot-docs":{"type":null,"mount_options":[],"guestpath":"/home/vagrant/spot-docs","hostpath":"/Users/Beemo/Code/spot-docs","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/Beemo/Code/spot-docs","disabled":false,"__vagrantfile":true}}}
