@@ -2,7 +2,11 @@
 
 For the [#100DaysofCode challenge](https://github.com/billimarie/100-days-of-code), I'm working on a lightweight Laravel/Heroku web app that shows you which open source projects need documentation help.
 
+## Demo
+
 See **Spot the Docs** live on [Heroku](https://floating-citadel-84168.herokuapp.com).
+
+![https://floating-citadel-84168.herokuapp.com](https://github.com/billimarie/spot-the-docs/blob/master/screenshot.png)
 
 ## Documentation
 
