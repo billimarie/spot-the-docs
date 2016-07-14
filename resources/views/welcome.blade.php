@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Spot the Docs is a Lightweight Laravel/Heroku Web App that finds documentation issues with GitHub's API</title>
+        <title>Spot the Docs is a Lightweight Laravel/Heroku Web App that finds open-source projects with documentation issues using GitHub's API</title>
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 
@@ -15,7 +15,7 @@
         <div class="container">
           <div class="content">
             <h1 class="title">Spot the Docs</h1>
-            <h2 class="description">Spot the Docs is a lightweight Laravel/Heroku web app that collects finds documentation issues on GitHub.<br /><br />Browse the most recent issues and send in your contributions.</h2>
+            <h2 class="description">Spot the Docs is a lightweight Laravel/Heroku web app for finding documentation issues on open-source GitHub projects.<br /><br />You can browse the most recent issues to start contributing. Go docs!</h2>
             <button name="ghdoctag" id="ghdoctag" alt="Github Documentation Tag">Go</button></a>
 
             <div id="ghapidata" class="clearfix"></div>
