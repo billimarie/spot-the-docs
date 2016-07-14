@@ -5,35 +5,10 @@
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 
-        <style>
-            html, body {
-                height: 100%;
-            }
+        <link rel='stylesheet' href='/css/app.css' type='text/css' />
 
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato', sans-serif;
-            }
-
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
-
-            .content {
-                text-align: center;
-                display: inline-block;
-            }
-
-            .title {
-                font-size: 96px;
-            }
-        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        
     </head>
     <body>
         <div class="container">
@@ -44,6 +19,6 @@
         </div>
 
       <footer>a <strong><a href="https://github.com/billimarie/100-days-of-code" target="_blank">#100DaysofCodes</a></strong> experiment by <strong><a href="http://www.billimarie.com/portfolio" target="_blank">Billimarie</a></strong></footer>
-      
+
     </body>
 </html>
