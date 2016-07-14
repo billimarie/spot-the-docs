@@ -1,0 +1,39 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "the \nSpot the Docs\n Docs", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#the-spot-the-docs-docs", 
+            "text": "", 
+            "title": "the Spot the Docs Docs"
+        }, 
+        {
+            "location": "/about/", 
+            "text": "About \nSpot the Docs\n\n\nSpot the Docs is a lightweight Laravel/Heroku web app that finds open-source projects with documentation issues using GitHub's API.\n\n\n\n\nGitHub\n\n\nHeroku\n\n\n\n\nCommands\n\n\nUsing MKDocs\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject Layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    about.md  # The about page.", 
+            "title": "About"
+        }, 
+        {
+            "location": "/about/#about-spot-the-docs", 
+            "text": "Spot the Docs is a lightweight Laravel/Heroku web app that finds open-source projects with documentation issues using GitHub's API.   GitHub  Heroku", 
+            "title": "About Spot the Docs"
+        }, 
+        {
+            "location": "/about/#commands", 
+            "text": "", 
+            "title": "Commands"
+        }, 
+        {
+            "location": "/about/#using-mkdocs", 
+            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.", 
+            "title": "Using MKDocs"
+        }, 
+        {
+            "location": "/about/#project-layout", 
+            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    about.md  # The about page.", 
+            "title": "Project Layout"
+        }
+    ]
+}

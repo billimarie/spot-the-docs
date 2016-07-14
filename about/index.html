@@ -4,17 +4,17 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Spot the Docs is a lightweight Laravel/Heroku web app that finds open-source projects with documentation issues using GitHub's API.">
+        
         <meta name="author" content="Billimarie Lubiano Robinson">
-        <link rel="canonical" href="https://floating-citadel-84168.herokuapp.com/">
-        <link rel="shortcut icon" href="./img/favicon.ico">
+        <link rel="canonical" href="https://floating-citadel-84168.herokuapp.com/about/">
+        <link rel="shortcut icon" href="../img/favicon.ico">
 
-	<title>Spot the Docs</title>
+	<title>About - Spot the Docs</title>
 
-        <link href="./css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="./css/font-awesome-4.0.3.css" rel="stylesheet">
-        <link rel="stylesheet" href="./css/highlight.css">
-        <link href="./css/base.css" rel="stylesheet">
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <link href="../css/base.css" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -41,7 +41,7 @@
             </button>
 
             <!-- Main title -->
-            <a class="navbar-brand" href=".">Spot the Docs</a>
+            <a class="navbar-brand" href="..">Spot the Docs</a>
         </div>
 
         <!-- Expanded navigation -->
@@ -50,14 +50,14 @@
             <ul class="nav navbar-nav">
             
             
-                <li class="active">
-                    <a href=".">Home</a>
+                <li >
+                    <a href="..">Home</a>
                 </li>
             
             
             
-                <li >
-                    <a href="about/">About</a>
+                <li class="active">
+                    <a href="./">About</a>
                 </li>
             
             
@@ -70,13 +70,13 @@
                         <i class="fa fa-search"></i> Search
                     </a>
                 </li>
-                <li class="disabled">
-                    <a rel="next" >
+                <li >
+                    <a rel="next" href="..">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
-                <li >
-                    <a rel="prev" href="about/">
+                <li class="disabled">
+                    <a rel="prev" >
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -99,14 +99,35 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#the-spot-the-docs-docs">the Spot the Docs Docs</a></li>
+        <li class="main active"><a href="#about-spot-the-docs">About Spot the Docs</a></li>
+        
+            <li><a href="#commands">Commands</a></li>
         
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="the-spot-the-docs-docs">the <strong><em>Spot the Docs</em></strong> Docs</h1></div>
+<h1 id="about-spot-the-docs">About <strong><em>Spot the Docs</em></strong></h1>
+<p>Spot the Docs is a lightweight Laravel/Heroku web app that finds open-source projects with documentation issues using GitHub's API.</p>
+<ul>
+<li><a href="https://www.github.com/billimarie/spot-the-docs/">GitHub</a></li>
+<li><a href="https://floating-citadel-84168.herokuapp.com/">Heroku</a></li>
+</ul>
+<h2 id="commands">Commands</h2>
+<h3 id="using-mkdocs">Using MKDocs</h3>
+<ul>
+<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
+<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
+<li><code>mkdocs build</code> - Build the documentation site.</li>
+<li><code>mkdocs help</code> - Print this help message.</li>
+</ul>
+<h4 id="project-layout">Project Layout</h4>
+<pre><code>mkdocs.yml    # The configuration file.
+docs/
+    index.md  # The documentation homepage.
+    about.md  # The about page.
+</code></pre></div>
         </div>
 
         <footer class="col-md-12">
@@ -115,12 +136,12 @@
             <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
         </footer>
 
-        <script src="./js/jquery-1.10.2.min.js"></script>
-        <script src="./js/bootstrap-3.0.3.min.js"></script>
-        <script src="./js/highlight.pack.js"></script>
-        <script>var base_url = '.';</script>
-        <script data-main="./mkdocs/js/search.js" src="./mkdocs/js/require.js"></script>
-        <script src="./js/base.js"></script>
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script>
+        <script>var base_url = '..';</script>
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+        <script src="../js/base.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
             <div class="modal-dialog">
