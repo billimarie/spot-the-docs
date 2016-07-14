@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Spot the Docs is a Lightweight Laravel Web App that finds documentation issues with GitHub's API</title>
+        <title>Spot the Docs is a Lightweight Laravel/Heroku Web App that finds documentation issues with GitHub's API</title>
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 
@@ -15,7 +15,7 @@
         <div class="container">
           <div class="content">
             <h1 class="title">Spot the Docs</h1>
-            <h2 class="description"><a href="/github">Spot the Docs</a> is a lightweight Laravel/Heroku web app that collects finds documentation issues on GitHub.<br /><br />Browse the most recent issues and send in your contributions.</h2>
+            <h2 class="description">Spot the Docs is a lightweight Laravel/Heroku web app that collects finds documentation issues on GitHub.<br /><br />Browse the most recent issues and send in your contributions.</h2>
             <button name="ghdoctag" id="ghdoctag" alt="Github Documentation Tag">Go</button></a>
 
             <div id="ghapidata" class="clearfix"></div>
@@ -55,19 +55,12 @@
                           for (var i = 0; i < items.length; i++) {
                               var issue = json.items[i].title;
                               var issueurl = json.items[i].html_url;
-                              // var repourl = json.html_url;
+
                               outhtml = outhtml + '<li><p style="clear:both;"><a class="link-text" href="'+issueurl+'" target="_blank">'+issue+'</a></p><div class="repo-button-wrapper"><a href="'+issueurl+'" target="_blank" class="repo"> <button>Issue</button></a></div></li>';
                           }
-                          outhtml = outhtml + '</ul></div><br /><br /><div class="pagination"><button id="next">Next</button></div>';
+                          outhtml = outhtml + '</ul></div>';
 
                           $('#ghapidata').html(outhtml);
-
-                          // $('#next').click(function(){
-                          //   i = 1;
-                          //   requir = requir+'&page='+i++;
-                          //   console.log(requir);
-                          //   $('#ghapidata').html(outhtml);
-                          // });
                       }
                     }
                   }
