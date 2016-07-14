@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>GitHub Test - Spot the Docs</title>
+        <title>Spot the Docs</title>
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 
@@ -54,7 +54,7 @@
                               var issue = json.items[i].title;
                               var issueurl = json.items[i].html_url;
                               // var repourl = json.html_url;
-                              outhtml = outhtml + '<li><p style="clear:both;"><a class="link-text" href="'+issueurl+'" target="_blank">'+issue+'</a></p><div class="repo-button-wrapper"><a class="repo"><button>Repo</button></a><a href="'+issueurl+'" target="_blank" class="repo"> <button>Issue</button></a></div></li>';
+                              outhtml = outhtml + '<li><p style="clear:both;"><a class="link-text" href="'+issueurl+'" target="_blank">'+issue+'</a></p><div class="repo-button-wrapper"><a href="'+issueurl+'" target="_blank" class="repo"> <button>Issue</button></a></div></li>';
                           }
                           outhtml = outhtml + '</ul></div><br /><br /><div class="pagination"><button id="next">Next</button></div>';
 
