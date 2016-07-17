@@ -64,24 +64,71 @@ h1 {
   line-height: 1.6em;
   margin-bottom: 10px; }
 
-h2.description {
+.title a {
+  color: #999;
+  text-decoration: none;
+  font-weight: lighter; }
+
+.title a:hover {
+  color: #777; }
+
+nav {
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center; }
+
+nav ul {
+  display: inline-block; }
+
+nav ul li:first-child {
+  padding-left: 0; }
+
+nav ul li:last-child {
+  padding-right: 0; }
+
+nav ul li {
+  display: inline-block;
+  padding: 0 10px; }
+
+nav ul li a {
+  font-size: medium; }
+
+.description {
   margin: 2em auto 1em;
   padding: 0;
-  font-size: 2.8em;
-  line-height: 1.55em;
   color: #888;
-  font-weight: 900;
+  font-weight: lighter;
   font-family: 'Lato', Helvetica, Arial, sans-serif; }
+
+h2.description {
+  font-size: 3em;
+  line-height: 1.55em; }
+
+h3.description {
+  font-size: 2em;
+  line-height: 1.5em; }
+
+ul li.description {
+  font-size: .75em;
+  line-height: 1.20em;
+  margin-top: 0; }
 
 p {
   font-size: 2em;
   line-height: 1.55em; }
 
 a {
-  color: #8eadd2; }
+  color: #b8cae0;
+  font-weight: bold; }
 
 a:hover {
-  color: #6e91b9; }
+  color: #abb7c6; }
+
+pre {
+  display: inline-block;
+  font-family: monospace;
+  white-space: pre; }
 
 .title {
   text-align: center;
@@ -144,7 +191,7 @@ a:hover {
   padding: 8px 18px;
   font-size: 14px;
   font-weight: bold;
-  color: #444;
+  color: #666;
   text-decoration: none;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
   background-color: #eaeaea;
@@ -156,7 +203,7 @@ a:hover {
 
 .repolist ul li a.repo button:hover {
   cursor: pointer;
-  color: #222;
+  color: #333;
   border-bottom-color: #c5c5c5;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); }
 
@@ -166,17 +213,20 @@ a:hover {
 .repolist ul li p a.link-text {
   font-family: 'Lato', Helvetica, Arial, sans-serif;
   font-size: 1.5em;
-  color: #333;
+  color: #555;
   text-decoration: none;
   font-weight: 700; }
 
 .repolist ul li a.link-text:hover {
-  color: #666; }
+  color: #888; }
 
 .repolist {
   display: block;
   clear: both;
   width: 100%; }
+
+.repolist h1.repo-title {
+  font-size: 4em; }
 
 #ghusername {
   display: block;
@@ -192,7 +242,7 @@ a:hover {
   padding: 8px 18px;
   font-size: 2em;
   font-weight: light;
-  color: #444;
+  color: #666;
   text-decoration: none;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
   background-color: #eaeaea;
@@ -204,6 +254,7 @@ a:hover {
 
 #ghdoctag:hover {
   cursor: pointer;
+  color: #333;
   background-color: #dadada;
   background-image: linear-gradient(#eaeaea, #dadada);
   border-color: #ccc #ccc #b5b5b5; }
@@ -218,6 +269,12 @@ footer {
   margin: 0 auto;
   text-align: center;
   padding: 2em; }
+
+footer p {
+  font-size: small; }
+
+footer p:first-child {
+  margin-bottom: 1em; }
 
 /* clearfix */
 .clearfix:after {

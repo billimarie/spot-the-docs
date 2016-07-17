@@ -1,85 +1,27 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Spot the Docs is a Lightweight Laravel/Heroku Web App that finds open-source projects with documentation issues using GitHub's API</title>
+  <head>
+    <title>Spot the Docs is a Lightweight Laravel/Heroku Web App that finds open-source projects with documentation issues using GitHub's API</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+    @include( 'includes.head' )
 
-        <link rel='stylesheet' href='/css/app.css' type='text/css' />
+  <body>
+    <div class="wrap">
+      <div class="container">
+        <div class="content">
+          <h1 class="title"><a href="/">Spot the Docs</a></h1>
+          
+          @include ( 'includes.nav' )
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+          <h2 class="description">Browse the most recent GitHub documentation issues on open-source projects.</h2>
+          <button name="ghdoctag" id="ghdoctag" alt="Github Documentation Tag">Go Docs!</button></a>
 
-    </head>
-    <body>
-      <div class="wrap">
-        <div class="container">
-          <div class="content">
-            <h1 class="title">Spot the Docs</h1>
-            <h2 class="description">Spot the Docs is a lightweight Laravel/Heroku web app for finding documentation issues on open-source GitHub projects.<br /><br />You can browse the most recent issues to start contributing. Go docs!</h2>
-            <button name="ghdoctag" id="ghdoctag" alt="Github Documentation Tag">Go</button></a>
-
-            <div id="ghapidata" class="clearfix"></div>
-          </div>
+          <div id="ghapidata" class="clearfix"></div>
         </div>
-
-        <script type="text/javascript">
-          $(document).ready(function() {
-            var i = 0;
-            var requir = 'https://api.github.com/search/issues?q=is:public+is:open+type:issue+label:documentation';
-
-            $( function githubDocs(){
-              $('#ghdoctag').on('click', function(e){
-                e.preventDefault();
-                $('#ghapidata').html('<div id="loader"><img src="https://i.imgur.com/UqLN6nl.gif" alt="Loading..."></div>');
-
-                requestJSON(requir, function(json) {
-                  if(json.message == "Not Found" || issue == '') {
-                    $('#ghapidata').html("<h2>No Issues Found</h2>");
-                  } else {
-                    var items = json.items;
-                    var outhtml = '';
-                    var issue = '';
-
-                    outhtml = outhtml + '<div class="repolist clearfix">';
-
-                    $.getJSON(requir, function(json){
-                      items = json.items;
-                      outputPageContent();
-                    });
-
-                    function outputPageContent() {
-                      if(items.length == 0) {
-                        outhtml = outhtml + '<p>No issues!</p></div>';
-                      } else {
-                        outhtml = outhtml + '<br /><br /><ul>';
-                          for (var i = 0; i < items.length; i++) {
-                              var issue = json.items[i].title;
-                              var issueurl = json.items[i].html_url;
-
-                              outhtml = outhtml + '<li><p style="clear:both;"><a class="link-text" href="'+issueurl+'" target="_blank">'+issue+'</a></p><div class="repo-button-wrapper"><a href="'+issueurl+'" target="_blank" class="repo"> <button>Issue</button></a></div></li>';
-                          }
-                          outhtml = outhtml + '</ul></div>';
-
-                          $('#ghapidata').html(outhtml);
-                      }
-                    }
-                  }
-                });
-              });
-            });
-
-            function requestJSON(url, callback) {
-              $.ajax({
-                url: url,
-                complete: function(xhr) {
-                  callback.call(null, xhr.responseJSON);
-                }
-              });
-            }
-          });
-        </script>
-
-        <footer>a <strong><a href="https://github.com/billimarie/100-days-of-code" target="_blank">#100DaysofCodes</a></strong> experiment by <strong><a href="http://www.billimarie.com/portfolio" target="_blank">Billimarie</a></strong></footer>
       </div>
-    </body>
+
+      @include( 'includes.footer' )
+
+    </div>
+  </body>
 </html>
