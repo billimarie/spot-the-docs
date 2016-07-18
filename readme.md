@@ -20,12 +20,14 @@ For installation, contributor guidelines, deployment, and FAQs: [Spot the Docs (
 
 **Spot the Docs** is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
 
-## Note
+## Resources
+
+TBD
+
+## Acknowledgements
 
 The [Spot the Docs](http://floating-citadel-84168.herokuapp.com) title is a riff on [Read the Docs](https://readthedocs.org/) and [Write the Docs](http://www.writethedocs.org/).
 
 ...the unfortunate side-effect of this awesome rhyme include its awkward acronym ('StD').
-
-## Acknowledgements
 
 Thank you to [@jakerocheleau](https://github.com/jakerocheleau) for [writing a tutorial](http://blog.teamtreehouse.com/code-a-simple-github-api-webapp-using-jquery-ajax) that helped this project come to life.
