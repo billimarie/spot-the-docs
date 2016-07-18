@@ -10,7 +10,7 @@ See **Spot the Docs** live on [Heroku](https://floating-citadel-84168.herokuapp.
 
 ## Documentation
 
-Coincidentally coming soon. Or later. Eventually, definitely.
+For installation, contributor guidelines, deployment, and FAQs: [Spot the Docs (MkDocs)](https://billimarie.github.io/spot-the-docs)
 
 ## Contributing
 

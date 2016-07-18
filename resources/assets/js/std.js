@@ -26,25 +26,24 @@ $( function githubDocs(){
             outhtml = outhtml + '<p>No issues!</p></div>';
           } else {
             outhtml = outhtml + '<br /><br /><ul>';
-              for (var i = 0; i < items.length; i++) {
-                  var issue = json.items[i].title;
-                  var issueURL = json.items[i].html_url;
 
-                  var repoName = ''; //json.items[i].name
-                  var repoURL = ''; //json.items[i].repository_url
+            for (var i = 0; i < items.length; i++) {
+              var issue = json.items[i].title;
+              var issueURL = json.items[i].html_url;
 
-                  var issueLink = document.createElement ( 'a' );
-                  issueLink.href = issueURL;
-                  var repoPathName = issueLink.pathname;
-                  var repoPathNameParameters = repoPathName.split( '/' );
-                  var repoURL = 'https\://github\.com/'+repoPathNameParameters[1]+'/'+repoPathNameParameters[2];
-                  var repoName = repoPathNameParameters[2];
+              var issueLink = document.createElement ( 'a' );
+              issueLink.href = issueURL;
+              var repoPathName = issueLink.pathname;
+              var repoPathNameParameters = repoPathName.split( '/' );
+              var repoURL = 'https\://github\.com/'+repoPathNameParameters[1]+'/'+repoPathNameParameters[2];
+              var repoName = repoPathNameParameters[2];
 
-                  outhtml = outhtml + '<li><div style="clear:both"><h1 class="repo-title"><a href="'+repoURL+'">'+repoName+'</a></h1><p><a class="link-text" href="'+issueURL+'" target="_blank">'+issue+'</a></p></div><div class="repo-button-wrapper"><a href="'+issueURL+'" target="_blank" class="repo"> <button>Issue</button></a> &nbsp; <a href="'+repoURL+'" target="_blank" class="repo"> <button>Repo</button></a></div></li>';
-              }
-              outhtml = outhtml + '</ul></div>';
+              outhtml = outhtml + '<li><div style="clear:both"><h1 class="repo-title"><a href="'+repoURL+'">'+repoName+'</a></h1><p><a class="link-text" href="'+issueURL+'" target="_blank">'+issue+'</a></p></div><div class="repo-button-wrapper"><a href="'+issueURL+'" target="_blank" class="repo"> <button>Issue</button></a> &nbsp; <a href="'+repoURL+'" target="_blank" class="repo"> <button>Repo</button></a></div></li>';
+            }
 
-              $('#ghapidata').html(outhtml);
+            outhtml = outhtml + '</ul></div>';
+
+            $('#ghapidata').html(outhtml);
 
           }
         }
