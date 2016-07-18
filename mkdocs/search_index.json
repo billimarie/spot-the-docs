@@ -2,13 +2,43 @@
     "docs": [
         {
             "location": "/", 
-            "text": "the \nSpot the Docs\n Docs", 
+            "text": "Home\n\n\nWelcome to the documentation site for \nSpot the Docs\n. Here's where you can find installation guidelines, deployment questions, and contributor guidelines.\n\n\nAbout \nSpot the Docs\n\n\nSpot the Docs\n is an app that uses GitHub's API to find open-source projects in need of documentation contributors.\n\n\nTo learn more, visit the \nAbout\n page.\n\n\nThere are four main sections within the \nSpot the Docs\n documentation site:\n\n\n\n\nInstallation\n\n\nDeploying\n\n\nContribution Guidelines\n\n\nFAQs\n\n\n\n\nDemo\n\n\nHere's the \nlive demo\n.\n\n\nInstallation\n\n\nDeploying\n\n\nContribution Guidelines\n\n\nFAQs", 
             "title": "Home"
         }, 
         {
-            "location": "/#the-spot-the-docs-docs", 
+            "location": "/#home", 
+            "text": "Welcome to the documentation site for  Spot the Docs . Here's where you can find installation guidelines, deployment questions, and contributor guidelines.", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#about-spot-the-docs", 
+            "text": "Spot the Docs  is an app that uses GitHub's API to find open-source projects in need of documentation contributors.  To learn more, visit the  About  page.  There are four main sections within the  Spot the Docs  documentation site:   Installation  Deploying  Contribution Guidelines  FAQs", 
+            "title": "About Spot the Docs"
+        }, 
+        {
+            "location": "/#demo", 
+            "text": "Here's the  live demo .", 
+            "title": "Demo"
+        }, 
+        {
+            "location": "/#installation", 
             "text": "", 
-            "title": "the Spot the Docs Docs"
+            "title": "Installation"
+        }, 
+        {
+            "location": "/#deploying", 
+            "text": "", 
+            "title": "Deploying"
+        }, 
+        {
+            "location": "/#contribution-guidelines", 
+            "text": "", 
+            "title": "Contribution Guidelines"
+        }, 
+        {
+            "location": "/#faqs", 
+            "text": "", 
+            "title": "FAQs"
         }, 
         {
             "location": "/about/", 
