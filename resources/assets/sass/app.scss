@@ -1,3 +1,12 @@
+// _color_palette.sass
+$lightgray: #fafafa;
+$gray9: #999;
+$darknavy: #47586d;
+$lightnavy: #627996;
+
+// _font_family.sass
+$Lato: 'Lato', Helvetica, Arial, sans-serif;
+
 // @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -20,8 +29,8 @@ html {
   overflow-y: scroll;
 }
 body {
-  background-color: #fafafa;
-  font-family: Helvetica, Arial, sans-serif;
+  background-color: $lightgray;
+  font-family: $Lato;
   font-size: 62.5%;
   line-height: 1;
   color: #616161;
@@ -54,14 +63,14 @@ table { border-collapse: collapse; border-spacing: 0; }
 img { border: 0; max-width: 100%; }
 
   h1 {
-    font-family: 'Lato', Helvetica, Arial, sans-serif;
-    color: #999;
+    font-family: $Lato;
+    color: $gray9;
     font-size: 5em;
     line-height: 1.6em;
     margin-bottom: 10px;
   }
   .title a {
-    color: #999;
+    color: $gray9;
     text-decoration: none;
     font-weight: lighter;
   }
@@ -71,8 +80,10 @@ img { border: 0; max-width: 100%; }
   nav {
     display: inline-block;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 1em;
     text-align: center;
+    font-size: x-large;
+    font-weight: bold;
   }
     nav ul {
       display: inline-block;
@@ -88,39 +99,36 @@ img { border: 0; max-width: 100%; }
         padding: 0 10px;
       }
       nav ul li a {
+        text-decoration: none;
+        text-transform: uppercase;
         font-size: medium;
       }
   .description {
-    margin: 2em auto 1em;
+    margin: 1em auto;
     padding: 0;
-    color: #888;
-    font-weight: lighter;;
-    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    color: #666;
+    font-weight: bold;
+    font-family: $Lato;
   }
-  h2.description {
-    font-size: 3em;
+  h2.description, ol.description  {
+    font-size: 2.75em;
     line-height: 1.55em;
   }
-  h3.description {
-    font-size: 2em;
-    line-height: 1.5em;
+  ol.description {
+    margin-left: 10px;
+    padding-left: 15px;
+    list-style: decimal;
   }
-  ul li.description {
-    font-size: .75em;
-    line-height: 1.20em;
-    margin-top: 0;
-  }
-
   p {
   font-size: 2em;
   line-height: 1.55em;
   }
   a {
-    color: #b8cae0;
+    color: $darknavy;
     font-weight: bold;
   }
   a:hover {
-    color: #abb7c6;
+    color: $lightnavy;
   }
   pre {
     display: inline-block;
@@ -129,14 +137,11 @@ img { border: 0; max-width: 100%; }
   }
 .title {
   text-align: center;
-  font-weight: light;
   font-size: 8em;
   line-height: 1em;
   padding: 0.5em;
 }
-
 .wrap { width: 100%; }
-
 .container {
 display: block;
 min-width: 300px;
@@ -151,25 +156,21 @@ box-shadow: 1px 2px 3px -1px rgba(0,0,0,0.4);
 -moz-border-radius: 4px;
 border-radius: 4px;
 }
-
 #ghapidata {
 display: block;
 padding: 25px 0;
 }
-
 #loader {
 display: block;
 width: 200px;
 margin: 2em auto;
 text-align: center;
 }
-
 .smallname {
 font-size: 0.75em;
 color: #a9a9a9;
 font-style: italic;
 }
-
 .avi {
 float: left;
 margin-right: 7px;
@@ -227,7 +228,7 @@ box-shadow: inset 0 1px 3px rgba(0,0,0,0.25);
 }
 .repolist ul li p a.link-text {
   // border: none;
-  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-family: $Lato;
   font-size: 1.5em;
   color: #555;
   text-decoration: none;
@@ -257,7 +258,7 @@ width: 100%;
   display: block;
   padding: 8px 18px;
   font-size: 2em;
-  font-weight: light;
+  font-weight: normal;
   color: #666;
   text-decoration: none;
   text-shadow: 0 1px 0 rgba(255,255,255,0.8);
@@ -297,9 +298,8 @@ footer {
   margin: 0 auto;
   text-align: center;
   padding: 2em;
-}
-footer p {
-  font-size: small;
+  font-size: xx-small;
+  font-weight: bold;
 }
 footer p:first-child {
   margin-bottom: 1em;
