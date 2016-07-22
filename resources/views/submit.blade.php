@@ -13,15 +13,8 @@
 
           @include ( 'includes.nav' )
 
-          <h2 class="description">This app was made for people who love reading & writing documentation. If you happen to be someone who is in need of documentation help:</h2>
-          <ul style="font-size: 3em">
-            <li class="description">visit and fork the <a href="https://github.com/billimarie/spot-the-docs/blob/master/readme.md">Spot the Docs</a> repo on GitHub</li>
-            <li class="description">update the <pre>readme.md</pre> file (under <pre>Resources</pre>) with a link to your project</li>
-            <li class="description">submit a pull-request:
-              <br />
-              <pre>sub_username_repo-name</pre>
-            </li>
-          </ul>
+          <h2 class="description">This app was made for people who love reading & writing documentation. </h2>
+          <h2 class="description">Do you know of an open-source project in need of documentation contributors? You can add the project to our on-going <a href="https://github.com/billimarie/spot-the-docs/issues/8">Projects in need of documentation contributors</a> thread.</h2>
         </div>
       </div>
 

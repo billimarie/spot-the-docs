@@ -14,7 +14,7 @@
           @include ( 'includes.nav' )
 
           <h2 class="description">Spot the Docs is a lightweight Laravel/Heroku web app for finding documentation issues on open-source GitHub projects.</h2>
-          <h3 class="description">For information about contributing, visit <a href="https://billimarie.github.io/spot-the-docs">Spot the Docs: Documentation</a>.</h3>
+          <h2 class="description">For information about contributing, visit <a href="https://billimarie.github.io/spot-the-docs">Spot the Docs: Documentation</a>.</h2>
         </div>
       </div>
 
