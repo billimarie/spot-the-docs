@@ -12,3 +12,7 @@
     <script src="/js/all.js"></script>
 
   </head>
+
+  <body>
+
+    <a class="github-fork-ribbon" href="http://www.github.com/billimarie/spot-the-docs" title="Fork me on GitHub">Fork me on GitHub</a>

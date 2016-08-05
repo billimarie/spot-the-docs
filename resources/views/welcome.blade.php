@@ -5,10 +5,6 @@
 
     @include( 'includes.head' )
 
-  <body>
-
-    <a class="github-fork-ribbon" href="http://www.github.com/billimarie/spot-the-docs" title="Fork me on GitHub">Fork me on GitHub</a>
-
     <div class="wrap">
       <div class="container">
         <div class="content">
